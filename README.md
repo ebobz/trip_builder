@@ -1,4 +1,4 @@
- # Trip Builder
+# Trip Builder
 
 API for agencies manage their trips.
   - Language: PHP (5.6)
