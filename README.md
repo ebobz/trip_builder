@@ -5,7 +5,9 @@ API for agencies manage their trips.
   - Database: SQLite3
   - Requirements: Curl and mod-rewrite
 
+## Documentation and API browser
 
+[Access to online documentation and API browser][browser]
 
 ## Install instructions
     
@@ -29,4 +31,9 @@ chmod 777 trip_builder/log
  - Limit requests to avoid DOS attacks
  - Use a better logger
 
+
+
+
+
+   [browser]: <http://54.197.38.202/browser>
  
