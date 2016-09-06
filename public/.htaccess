@@ -1,0 +1,15 @@
+#manda qualquer requisicao para o rewrite.php ex:
+#/sms/123 -> rewrite.php?_x=/sms/123
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_METHOD} =OPTIONS
+RewriteRule ^.*$ options.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ rewrite.php?queryPath=$1 [QSA,L]
+
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
